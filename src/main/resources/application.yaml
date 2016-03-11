@@ -1,0 +1,20 @@
+server:
+  contextPath: /vitalsport
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    jdbcUrl: jdbc:mysql://localhost:3306/vitalsport
+    username: vitalsport
+    password: vitalsport
+  jpa:
+    hibernate.ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: true
+        cache:
+          use_second_level_cache: false
+          use_structured_entities: true
+        generate_statistics: false
+vitalsport:
+  secretKey: verySecretKey
